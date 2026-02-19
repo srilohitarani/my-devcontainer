@@ -1,5 +1,6 @@
 {
   "name": "ga2-927398",
+  "image": "mcr.microsoft.com/devcontainers/python:3.11",
   "features": {
     "ghcr.io/devcontainers/features/python:1": {}
   },
@@ -11,5 +12,5 @@
       ]
     }
   },
-  "postCreateCommand": "uv pip install fastapi"
+  "postCreateCommand": "pip install uv && uv pip install --system fastapi"
 }
